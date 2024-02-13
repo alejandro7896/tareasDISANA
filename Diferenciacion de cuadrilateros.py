@@ -9,9 +9,10 @@ for x in range(4):
     lados.append(int(input(f"Lado {x+1}: ")))
 
 ap = lados[0]
+
 cuadrado = False
 rectangulo = False
-print(ap)
+
 for l in lados:
     if ap == l:
         cuadrado = True
