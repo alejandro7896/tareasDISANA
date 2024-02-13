@@ -21,12 +21,16 @@ for l in lados:
 for l in lados:
     if lados.count(l) == 2:
         rectangulo = True
+    else:
+        rectangulo = False
+        break
     
 if cuadrado:
     print("ES UN CUADRADO")
     
 elif rectangulo:
     print("ES UN RECTÁNGULO")
+    
 else:
     print("ES OTRO CUADRILATERO")
     
