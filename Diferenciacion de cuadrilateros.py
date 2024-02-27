@@ -4,9 +4,11 @@
 
 print("DIFERENCIADOR DE CUADRILATEROS")
 lados = []
-
-for x in range(4):
-    lados.append(eval(input(f"Lado {x+1}: ")))
+try:
+    for x in range(4):
+        lados.append(eval(input(f"Lado {x+1}: ")))
+except:
+    print("Sólo se aceptan números")
 
 cuadrado = False
 rectangulo = False
