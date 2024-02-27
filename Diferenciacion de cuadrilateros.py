@@ -6,25 +6,20 @@ print("DIFERENCIADOR DE CUADRILATEROS")
 lados = []
 
 for x in range(4):
-    lados.append(int(input(f"Lado {x+1}: ")))
-
-ap = lados[0]
+    lados.append(eval(input(f"Lado {x+1}: ")))
 
 cuadrado = False
 rectangulo = False
 
-for l in lados:
-    if ap == l:
-        cuadrado = True
-    else:
-        cuadrado = False
-        break
-for l in lados:
-    if lados.count(l) == 2:
-        rectangulo = True
-    else:
-        rectangulo = False
-        break
+if lados.count(lados[0]) == 4:
+    cuadrado = True
+else:    
+    for l in lados:
+        if lados.count(l) == 2:
+            rectangulo = True
+        else:
+            rectangulo = False
+            break
     
 if cuadrado:
     print("ES UN CUADRADO")
